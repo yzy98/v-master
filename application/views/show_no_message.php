@@ -1,0 +1,1 @@
+<h3 class="text-danger text-center"><strong>Sorry!</strong> This category has no content right now!</h3>
