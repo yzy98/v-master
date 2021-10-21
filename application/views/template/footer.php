@@ -7,7 +7,7 @@
 <script src="<?php echo base_url(); ?>assets/js/ui.js"></script>
 <script src="<?php echo base_url(); ?>assets/js/app.js"></script>
 
-<footer class="mt-lg-5 p-3 text-center bg-light">
+<footer class="mt-lg-5 p-3 text-center bg-light footer">
     <p>V-Instructor &copy; 2021-<?php echo date("Y"); ?></p>
 </footer>
 </body>

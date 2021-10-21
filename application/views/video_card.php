@@ -4,7 +4,7 @@
       <div class="col-md-4">
         <a href="<?php echo base_url(); ?>video/show_video/<?php echo $v_id; ?>">
           <video width="350">
-            <source src="<?php echo str_replace("/var/www/htdocs", "", $path); ?>" type="video/mp4">
+            <source src="<?php echo str_replace("/var/www/html", "", $path); ?>" type="video/mp4">
           </video>
         </a>
       </div>

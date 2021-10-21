@@ -29,7 +29,7 @@ class video extends CI_Controller {
       'v_id' => $v_id,
       'u_id' => $u_id,
       'title' => $video->title,
-      'path' => str_replace("/var/www/htdocs", "", $video->path),
+      'path' => str_replace("/var/www/html", "", $video->path),
       'category' => $video->category,
       'username' => $video->username,
       'description' => $video->description,

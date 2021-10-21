@@ -23,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'https://infs3202-a58a7547.uqcloud.net/myprj/';
+$config['base_url'] = 'http://34.70.47.33:8080/';
 
 /*
 |--------------------------------------------------------------------------

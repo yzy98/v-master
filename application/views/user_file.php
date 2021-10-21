@@ -15,7 +15,7 @@
                 ';
 
                 foreach ($videos as $row) {
-                    $path = str_replace("/var/www/htdocs", "", $row->path);
+                    $path = str_replace("/var/www/html", "", $row->path);
                     $v_id = base_url()."video/show_video/$row->v_id";
                     $c = sprintf($single_video_view, $v_id, $path);
                     echo $c;
@@ -43,7 +43,7 @@
                 ';
 
                 foreach ($wishlist as $row) {
-                    $path = str_replace("/var/www/htdocs", "", $row->path);
+                    $path = str_replace("/var/www/html", "", $row->path);
                     $v_id = base_url()."video/show_video/$row->v_id";
                     $w_id = $row->w_id;
                     $c = sprintf($single_video_view, $v_id, $path, $w_id);
@@ -51,11 +51,11 @@
                 }
                 ?>
             </div>
-        </div>
-        <div class="container mb-4">
+        </div> 
+        <div class="container mb-4" style="display:none;">
             <p>Account balance&nbsp;&nbsp;&nbsp;&nbsp;<strong>$ <?php echo $balance; ?></strong></p>
         </div>
-        <div class="container mb-4">
+        <div class="container mb-4" style="display:none;">
             
             <div class="row flex-row flex-nowrap">
                 <p class="mx-3">Top up</p>
@@ -107,16 +107,6 @@
                 </div>
             </div>
             <div class="card-footer justify-content-center">
-                <div class="row mb-3">
-                    <a href="<?php echo base_url(); ?>update_info" class="btn btn-outline-primary btn-block">
-                        Update info
-                    </a>
-                </div>
-                <div class="row mb-3">
-                    <a href="<?php echo base_url(); ?>user_file/pdf" class="btn btn-outline-success btn-block">
-                        View in pdf
-                    </a>
-                </div>
                 <div class="row">
                 <a href="<?php echo base_url(); ?>login/logout" class="btn btn-outline-secondary btn-block">
                         Logout

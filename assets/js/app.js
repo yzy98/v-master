@@ -27,7 +27,7 @@ Dropzone.options.fileupload = {
 
 // Show all comments
 function showComments(v_id) {
-  let url = `https://infs3202-a58a7547.uqcloud.net/myprj/video/show_comments/${v_id}`;
+  let url = `http://34.136.144.131/demo/video/show_comments/${v_id}`;
   // AJAX
   $.ajax({
     url: url,
@@ -75,7 +75,7 @@ function putComment() {
   if(inputName === '' || inputTitle === '' || inputText === '') {
     ui.showAlert('Please fill in all fields!', 'error');
   } else {
-    let url = 'https://infs3202-a58a7547.uqcloud.net/myprj/video/post_comment/' + videoId;
+    let url = 'http://34.136.144.131/demo/video/post_comment/' + videoId;
     let data = {
       v_id: videoId,
       commenter: inputName,
@@ -106,7 +106,7 @@ function putComment() {
 function addLike() {
   const videoId = parseInt(document.querySelector(".video-id").innerHTML);
   const userId = parseInt(document.querySelector(".user-id").innerHTML);
-  let url = 'https://infs3202-a58a7547.uqcloud.net/myprj/video/addlike/' + videoId;
+  let url = 'http://34.136.144.131/demo/video/addlike/' + videoId;
   let data = {
     u_id: userId,
     v_id: videoId,
@@ -130,7 +130,7 @@ function addLike() {
 function addWish() {
   const videoId = parseInt(document.querySelector(".video-id").innerHTML);
   const userId = parseInt(document.querySelector(".user-id").innerHTML);
-  let url = 'https://infs3202-a58a7547.uqcloud.net/myprj/video/addwish/' + videoId;
+  let url = 'http://34.136.144.131/demo/video/addwish/' + videoId;
   let data = {
     u_id: userId,
     v_id: videoId,
@@ -154,7 +154,7 @@ function addWish() {
 function delWish(e) {
   
   const w_id = e.target.dataset.id;
-  let url = 'https://infs3202-a58a7547.uqcloud.net/myprj/user_file/delwish/' + w_id;
+  let url = 'http://34.136.144.131/demo/user_file/delwish/' + w_id;
 
   // AJAX
   $.ajax({

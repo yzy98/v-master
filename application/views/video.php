@@ -15,8 +15,6 @@
           <div class="down-btns mt-4">
             <i class="video-like fab fa-gratipay fa-2x mr-md-4" style="color:gray; cursor: pointer;"></i>
 
-            <i class="video-tip fas fa-coins fa-2x mr-md-4" style="color:gray; cursor: pointer;"></i>
-
             <i class="video-comment fas fa-comment-dots fa-2x mr-md-4" style="color: gray; cursor: pointer;" data-toggle="modal" data-target="#commentModal"></i>
             <!-- Modal -->
             <div class="modal fade" id="commentModal" tabindex="-1"  aria-hidden="true">
@@ -63,31 +61,5 @@
 
     </div>
 
-    <!-- other videos -->
-    <div class="col-sm-3 text-center ml-auto mt-4">
-      <p>
-        Watch more videos made by <a href="#"><?php echo $username; ?></a>
-        <a href="#" style="color: grey">
-          <i class="fas fa-user-plus fa-lg"></i>
-        </a>
-      </p>
-      <div class="other-videos container" style="border: 1px solid black;">
-        <div class="other-video card mb-4 border-white shadow">
-          <div class="row no-gutters">
-            <div class="col-md-8">
-              <a href="#">
-                <img src="<?php echo base_url(); ?>assets/img/video1.jpeg" alt="video1" style="width: 100%;">
-              </a>
-            </div>
-            <div class="col-md-4 my-auto">
-              <div class="card-body">
-                <a href="#" class="text-dark" style="text-decoration: none;">Video 1</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-  
-    </div>
   </div>
 </div>  

@@ -24,15 +24,6 @@
         </li>
       </ul>
 
-      <form class="form-inline" action="#">
-        <div class="prefetch">
-          <input id="search_box" class="form-control mr-sm-2 typeahead" name="search_box" type="text" placeholder="Search">
-        </div>
-        <button class="btn btn-outline-success" type="submit">
-          <i class="fas fa-search"></i>
-        </button>
-      </form>
-
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
           <a href="<?php echo base_url(); ?>login/logout" class="nav-link">
